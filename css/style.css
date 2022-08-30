@@ -1,0 +1,372 @@
+
+.slick-list, .slick-slider {
+    position: relative;
+    display: block
+}
+
+.slick-slider {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-list:focus {
+    outline: 0
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand
+}
+
+.slick-slider .slick-list, .slick-slider .slick-track {
+    transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.slick-track:after, .slick-track:before {
+    content: "";
+    display: table
+}
+
+.slick-track:after {
+    clear: both
+}
+
+.slick-loading .slick-track {
+    visibility: hidden
+}
+
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none
+}
+
+[dir=rtl] .slick-slide {
+    float: right
+}
+
+.slick-initialized .slick-slide, .slick-slide img {
+    display: block
+}
+
+.slick-slide.slick-loading img {
+    display: none
+}
+
+.slick-slide.dragging img {
+    pointer-events: none
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+    display: none
+}
+
+@-webkit-keyframes remove {
+    0% {
+        left: 0
+    }
+    to {
+        left: -110%
+    }
+}
+
+@keyframes remove {
+    0% {
+        left: 0
+    }
+    to {
+        left: -110%
+    }
+}
+
+body, html {
+    font-style: normal;
+    font-weight: 400;
+    line-height: inherit;
+    vertical-align: baseline;
+    background: 0 0;
+    white-space: normal
+}
+
+a, abbr, address, article, aside, audio, b, blockquote, button, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, form, h1, h2, h3, h4, h5, h6, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, select, small, span, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, u, ul, var, video {
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: inherit;
+    vertical-align: baseline;
+    background: 0 0;
+    white-space: normal
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    color: #1c1c1c;
+    font-family: "PT Sans", sans-serif
+}
+
+form {
+    height: inherit
+}
+
+iframe {
+    width: 100%
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #535353 !important;
+    -webkit-box-shadow: 0 0 0 1000px #fff inset
+}
+
+A:active, A:hover, A:link, A:visited {
+    text-decoration: none
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+body, html {
+    font-size: 10px
+}
+
+body {
+    background: #222
+}
+
+.wrapper {
+    background: #5b5b5b;
+    border-radius: 2rem;
+    min-width: 50rem;
+    min-height: 40rem
+}
+
+.wrapper .title h1 {
+    color: #fffcfc;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center
+}
+
+.wrapper .addTodo, body {
+    justify-content: center;
+    display: flex;
+    align-items: center
+}
+
+.wrapper .addTodo input {
+    width: 37rem;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    padding: .8rem 2.2rem;
+    border-radius: 5px;
+    background: rgba(255, 190, 0, .12)
+}
+
+.wrapper .addTodo input::-moz-placeholder {
+    color: rgba(238, 238, 238, .58);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-style: normal
+}
+
+.wrapper .addTodo input:-ms-input-placeholder {
+    color: rgba(238, 238, 238, .58);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-style: normal
+}
+
+.wrapper .addTodo input::placeholder {
+    color: rgba(238, 238, 238, .58);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    font-style: normal
+}
+
+.wrapper .addTodo button {
+    border-radius: 50%;
+    background: #fff;
+    font-size: 4rem;
+    max-width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    border: 0;
+    justify-content: center;
+    margin-left: .7rem
+}
+
+.wrapper .sortTodo, .wrapper ul li {
+    justify-content: space-between;
+    display: flex;
+    align-items: center
+}
+
+.wrapper .sortTodo {
+    margin-top: 2rem;
+    padding: 1rem 2rem
+}
+
+.wrapper .addTodo button, .wrapper .sortTodo .left, .wrapper .sortTodo .right {
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.wrapper .sortTodo .left p {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 1rem
+}
+
+.wrapper .sortTodo .left p span, .wrapper .sortTodo .right button {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    font-style: normal
+}
+
+.wrapper .sortTodo .right {
+    justify-content: flex-end
+}
+
+.wrapper .sortTodo .right button {
+    padding: .3rem 1.3rem;
+    color: #303285;
+    background: #fff;
+    border-radius: 1rem;
+    border: 0;
+    margin-left: 1.1rem
+}
+
+.wrapper .sortTodo .right button.active {
+    background: red
+}
+
+.wrapper ul {
+    background: #4e51d8;
+    border-radius: 2rem;
+    padding: 2.5rem;
+    height: 42.1rem;
+    overflow: scroll
+}
+
+.wrapper ul li {
+    background: #7375d8;
+    border-radius: 10px;
+    margin-bottom: 2.1rem;
+    padding: 1rem
+}
+
+.wrapper ul li.remove {
+    position: relative;
+    -webkit-animation: remove 1s;
+    animation: remove 1s
+}
+
+.wrapper ul li .right {
+    display: flex
+}
+
+.wrapper ul li .line {
+    display: flex;
+    align-items: center;
+    position: relative
+}
+
+.wrapper ul li.checked {
+    background: rgba(0, 0, 0, .3)
+}
+
+.wrapper ul li.checked p {
+    text-decoration: line-through
+}
+
+.wrapper ul li:last-child {
+    margin-bottom: 0
+}
+
+.wrapper ul li button {
+    background: #e8e8e8;
+    max-width: 4rem;
+    width: 100%;
+    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    border-radius: 50%;
+    border: 0;
+    margin-left: .3rem;
+    font-weight: 600
+}
+
+.wrapper ul li b, .wrapper ul li p {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 400;
+    font-style: normal
+}
+
+.wrapper ul li b {
+    color: #d1d1d1;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 0
+}

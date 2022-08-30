@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NAME</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="title"><h1>To Do List</h1></div>
+    <div class="addTodo"><input id="input" type="text" value="" placeholder="add to do">
+        <button id="btnAdd" onclick="addTodo()">+</button>
+    </div>
+    <div class="sortTodo">
+        <div class="left"><p>todo: <span id="todoСounter">4</span></p>
+            <p>done : <span id="completedСounter">1</span></p></div>
+        <div class="right">
+            <button id="sortAll">all</button>
+            <button id="sortDone">done</button>
+            <button id="sortTodo">todo</button>
+        </div>
+    </div>
+    <ul id="list"></ul>
+</div>
+<script src="js/script00.js"></script>
+</body>
+</html>
